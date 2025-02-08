@@ -1,6 +1,6 @@
 {
   "name": "frontend",
-  "proxy": "https://azambg-ovui4r2fq-pratikganjale55gmailcoms-projects.vercel.app",
+  "proxy": "https://azambg.vercel.app/",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
