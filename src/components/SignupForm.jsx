@@ -30,7 +30,12 @@ const SignupForm = () => {
       return;
     }
 
-    const config = { url: "/auth/signup", method: "post", data: formData };
+    const config = { url: "/auth/signup", method: "post", data: formData, headers: {
+      "Content-Type": "application/json",
+      "Access-Control-Allow-Origin": "*", // Allow all origins (use specific domain in production)
+      "Access-Control-Allow-Methods": "GET,POST,PUT,DELETE",
+      "Access-Control-Allow-Headers": "Content-Type, Authorization"
+    } };
     fetchData(config).then(() => {
       navigate("/login");
     });
